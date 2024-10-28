@@ -4,7 +4,7 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
 import { MatIconModule } from '@angular/material/icon';
 import{IonicModule}from'@ionic/angular';
 import { addIcons } from 'ionicons';
-import { heart,chatbubbleEllipses,call,people,home, camera, search, playCircle, radio, library, chatbubbleOutline, peopleOutline, callOutline, chatboxOutline, ellipsisVertical, chatboxEllipses, chatboxEllipsesOutline} from 'ionicons/icons';
+import { heart,chatbubbleEllipses,call,people,home, camera, search, playCircle, radio, library, chatbubbleOutline, peopleOutline, callOutline, chatboxOutline, ellipsisVertical, chatboxEllipses, chatboxEllipsesOutline, chevronForward} from 'ionicons/icons';
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
@@ -14,6 +14,6 @@ import { heart,chatbubbleEllipses,call,people,home, camera, search, playCircle, 
 })
 export class Tab3Page {
   constructor() {
-    addIcons({chatboxOutline,chatboxEllipsesOutline,call,people,home,camera,search,playCircle,radio,library,chatbubbleOutline,peopleOutline,callOutline,ellipsisVertical})
+    addIcons({chatboxOutline,chatboxEllipsesOutline,call,people,home,camera,search,playCircle,radio,library,chatbubbleOutline,peopleOutline,callOutline,ellipsisVertical,chevronForward})
   }
 }
