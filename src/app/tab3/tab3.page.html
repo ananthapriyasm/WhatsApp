@@ -1,17 +1,92 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+     <b> Communtities</b>
     </ion-title>
-  </ion-toolbar>
+    <ion-buttons slot="end" >
+      <ion-button>
+       <span class="material-symbols-outlined">
+         qr_code_scanner
+         </span>
+      </ion-button>
+           <ion-button>
+             <span class="material-symbols-outlined">
+               photo_camera
+               </span>
+           </ion-button>
+           <ion-button>
+             <span class="material-symbols-outlined">
+ search
+ </span>
+           </ion-button>
+           <ion-button>
+             <span class="material-symbols-outlined">
+               more_vert
+               </span>
+       </ion-button>
+     </ion-buttons> 
+   
+   </ion-toolbar>
+   
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- <ion-card mode="ios" >
+    <ion-grid>
+      <ion-row>
+        <ion-col size ='2' class="thumbnails">
+          <ion-fab vertical="bottom" horizontal="end">
+            <ion-fab-button color="success" >
+              <ion-icon name="add"color='light'></ion-icon>
+            </ion-fab-button>
+          </ion-fab>
+    <ion-card-content>
+      <ion-list>
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img src='https://w7.pngwing.com/pngs/258/783/png-transparent-computer-icons-community-miscellaneous-text-rectangle-thumbnail.png'>
+  
+          </ion-thumbnail>
+          <ion-label><b>30 Days CD B1 challenge-17-10-2024</b></ion-label>
+        </ion-item>
+      </ion-list>
+       </ion-card-content>
+  </ion-card>
+   -->
+<ion-card mode="ios" >
+ 
+  <ion-card-content>
+    <ion-list>
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src='https://images.unsplash.com/photo-1729002125469-b5304d64de55?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+        </ion-thumbnail>
+        <ion-label><b>30 Days CD B1 challenge-17-10-2024</b></ion-label>
+      </ion-item>
+    </ion-list>
+     </ion-card-content>
+</ion-card>
+ <ion-card mode="ios">
+  <ion-card-content>
+    <ion-list >
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <ion-fab>
+            <ion-fab-button>
+              <span class="material-symbols-outlined">
+                campaign
+                </span>
+            </ion-fab-button>
+           </ion-fab>
+        </ion-thumbnail>
+        <ion-label><b>Announcement</b></ion-label>
+        <ion-label class="ion-text-end">3:17pm</ion-label>
+        
+      </ion-item>
+    </ion-list>
+     </ion-card-content>
+</ion-card>
+    <!-- <app-explore-container name="Tab 3 page"></app-explore-container>  --> 
+ </ion-content> 
