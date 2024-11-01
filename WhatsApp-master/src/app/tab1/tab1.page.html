@@ -1,0 +1,102 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title color="success" slot="start"><b>Whatsapp</b></ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <span class="material-symbols-outlined"> qr_code_scanner </span>
+      </ion-button>
+      <ion-button>
+        <span class="material-symbols-outlined"> photo_camera </span>
+      </ion-button>
+      <ion-button id="click-trigger">
+        <span class="material-symbols-outlined"> more_vert </span>
+      </ion-button>
+    </ion-buttons>
+    <ion-popover trigger="click-trigger" triggerAction="click">
+      <ng-template>
+        <ion-content class="ion-padding">
+          <ion-item lines="none">New group</ion-item>
+          <ion-item lines="none">New broadcast</ion-item>
+          <ion-item lines="none">Linked devices</ion-item>
+          <ion-item lines="none">Starred messages</ion-item>
+          <ion-item lines="none">Payments</ion-item>
+          <ion-item lines="none"
+            ><a [routerLink]="['/settings']">Settings</a></ion-item
+          >
+        </ion-content>
+      </ng-template>
+    </ion-popover>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item class="rounded-search-bar" lines="none">
+    <div id="lottie-animation" class="animation-bg"></div>
+    <ion-input placeholder="Ask Meta Ai or Search"></ion-input>
+  </ion-item>
+  <ion-chip class="ion-margin-start" color="success">All</ion-chip>
+  <ion-chip>Unread</ion-chip>
+  <ion-chip>Favourties</ion-chip>
+  <ion-chip>Groups</ion-chip>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="small">
+      <img src="assets/icon/109437348.webp" class="fab-icon" />
+    </ion-fab-button>
+    <ion-fab-button size="large" color="success">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#FFFFFF"
+      >
+        <path
+          d="M440-400h80v-120h120v-80H520v-120h-80v120H320v80h120v120ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"
+        />
+      </svg>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-item lines="none">
+    <ion-icon name="archive-outline" color="dark"></ion-icon
+    ><ion-label class="ion-padding-start">
+      <h2>Archeived</h2>
+    </ion-label>
+  </ion-item>
+  <ion-item lines="none" *ngFor="let contact of contacts"(click)="openChat(contact.name,contact.img)">
+    <ion-avatar slot="start">
+      <img
+        src="{{contact.img}}"
+      />
+    </ion-avatar>
+    <ion-label >
+    
+      <h2>{{ contact.name }}</h2>
+
+      <div *ngIf="contact.checked; else messageOnly">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            [attr.fill]="contact.checked ? '#4B77D1' : '#000000'"
+          >
+            <path d="M293-288 100-482l50-50 143 142 51 51-51 51Zm204 0L303-482l51-51 143 143 324-324 51 51-375 375Zm0-203-51-51 172-172 51 51-172 172Z"/>
+          </svg>
+          {{ contact.msg }}
+        </p>
+      </div>
+      <ng-template #messageOnly>
+        <p>{{ contact.msg }}</p>
+      </ng-template>
+   
+     
+    </ion-label>
+    <ion-label slot="end" [ngClass]="contact.badge ? 'success':'light'">
+      <h4>{{contact.date}}</h4>
+      <div class="ion-text-end">
+        <ion-badge slot="end" *ngIf="contact.badge">{{contact.badges}}</ion-badge>
+      </div>
+    </ion-label>
+  </ion-item>
+
+ 

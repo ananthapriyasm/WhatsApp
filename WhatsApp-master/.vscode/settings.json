@@ -1,0 +1,28 @@
+{
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular"
+  ],
+  "cSpell.words": [
+    "Aiden",
+    "Amutha",
+    "Anantha",
+    "Archeived",
+    "Byee",
+    "chatbox",
+    "chatbubble",
+    "Communtities",
+    "contactname",
+    "devkit",
+    "disappering",
+    "Everhart",
+    "Favourites",
+    "favourtie",
+    "Favourties",
+    "haptics",
+    "ionicons",
+    "karsten",
+    "kelix",
+    "Priya"
+  ]
+}

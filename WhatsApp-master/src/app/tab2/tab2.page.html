@@ -1,0 +1,177 @@
+ 
+ <ion-header class="ion-no-border" >
+  <ion-toolbar>
+    <ion-title>
+     <b> Updates</b>
+    </ion-title>
+    <ion-buttons slot="end" >
+     <ion-button>
+      <span class="material-symbols-outlined">
+        qr_code_scanner
+        </span>
+     </ion-button>
+          <ion-button>
+            <span class="material-symbols-outlined">
+              photo_camera
+              </span>
+          </ion-button>
+          <ion-button>
+            <span class="material-symbols-outlined">
+search
+</span>
+          </ion-button>
+          <ion-button>
+            <span class="material-symbols-outlined">
+              more_vert
+              </span>
+      </ion-button>
+    </ion-buttons> 
+  
+  </ion-toolbar>
+</ion-header>
+<div>
+  <ion-fab horizontal='end'   slot='fixed'class='fab-button' >
+    
+    <ion-button color="light"size="small">
+      <ion-icon name="pencil-outline"></ion-icon>
+    </ion-button>
+      </ion-fab>
+</div>
+<ion-fab horizontal='end'  vertical="bottom" slot='fixed'>
+  
+  <ion-button color="success"size="large">
+    <ion-icon slot="icon-only" ios="logo-apple" name="camera"  color="light"></ion-icon>
+  </ion-button>
+    </ion-fab>
+<ion-content [fullscreen]="true" class="ion-margin-start">
+  
+      <ion-title class="ion-padding"><b>Status</b></ion-title>
+
+      <!-- <ion-item lines="none" >
+        <ion-avatar slot="start">
+          <img src='https://images.unsplash.com/photo-1729002125469-b5304d64de55?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+        </ion-avatar>
+        <ion-label>
+          <h2>My Status</h2>
+          
+        </ion-label>
+      </ion-item> -->
+      <ion-grid>
+        <ion-row>
+          <ion-col size ='2' class="thumbnails">
+            <ion-fab vertical="bottom" horizontal="end">
+              <ion-fab-button color="success" >
+                <ion-icon name="add"color='light'></ion-icon>
+              </ion-fab-button>
+            </ion-fab>
+            <ion-avatar >
+              <img src='https://images.unsplash.com/photo-1729002125469-b5304d64de55?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'  style="width: 44px; height: 44px;" >
+            </ion-avatar>
+            
+          </ion-col>
+          <ion-label class="ion-padding-end" class="ion-padding-vertical">
+            <h2>My Status
+            </h2>
+          </ion-label>
+        </ion-row>
+        
+      </ion-grid>
+     <ion-item lines="none">Recent updates</ion-item>
+     <ion-item lines="none">
+      <ion-avatar slot="start"style="border: 3px solid rgb(43, 172, 43);">
+        <img src='https://images.unsplash.com/photo-1728845690503-3edfbd870662?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+      </ion-avatar>
+      <ion-label>
+        <h2>Aiden
+        </h2>
+      </ion-label>
+     </ion-item>
+   
+    <ion-item lines="none">
+      <ion-avatar slot="start"style="border: 3px solid rgb(43, 172, 43);">
+        <img src='https://plus.unsplash.com/premium_photo-1728925517201-858acab5c931?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+      </ion-avatar>
+      <ion-label>
+        <h2>Julian Everhart
+        </h2>
+        </ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-avatar slot="start" style="border: 3px solid rgb(43, 172, 43);" >
+        <img src='https://images.unsplash.com/photo-1728867165310-48cfc40d0109?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+      </ion-avatar>
+      <ion-label>
+        <h2>Sebastian Alexander
+        </h2>
+      </ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-avatar slot="start"style="border: 3px solid rgb(43, 172, 43);">
+        <img src='https://images.unsplash.com/photo-1729001199791-42e8d4d9e904?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+      </ion-avatar>
+      <ion-label>
+        <h2>Charlotte</h2>
+      </ion-label>
+    </ion-item>
+   <ion-item lines="none">
+  <ion-avatar slot="start"style="border: 3px solid rgb(43, 172, 43);">
+    <img src='https://images.unsplash.com/photo-1727257186617-38153f3bc067?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+  </ion-avatar>
+  <ion-label>
+    <h2>Isabella</h2>
+   
+  </ion-label>
+   </ion-item>
+   <ion-list-header>
+    <ion-label></ion-label>
+  </ion-list-header>
+  
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+   <ion-title>
+    Channels
+   </ion-title>
+  
+   
+  
+   <ion-grid>
+    <ion-row  >
+      <ion-col size="12" class="text">
+      Stay update on topics that matter to you.Find channels to follow below
+    </ion-col>
+      <ion-col size="5">
+       
+        <div class="ion-text-center">
+          <ion-card class="ion-no-border" mode="ios">
+            <ion-card-header class="ion-padding">
+              <div class="avatar-container">
+                <ion-avatar class="image">
+                  <img src='https://images.unsplash.com/photo-1727257186617-38153f3bc067?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                </ion-avatar>
+                <ion-card-subtitle color="dark">ABP News</ion-card-subtitle>
+                <ion-chip color="success">follow</ion-chip>              </div>
+          </ion-card-header>
+         </ion-card>
+         </div>
+      </ion-col>
+      <ion-col size="5">
+       
+        <div class="ion-text-center">
+          <ion-card class="ion-no-border" mode="ios">
+            <ion-card-header class="ion-padding">
+              <div class="avatar-container">
+                <ion-avatar class="image">
+                  <img src='https://images.unsplash.com/photo-1727257186617-38153f3bc067?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                </ion-avatar>
+                <ion-card-subtitle color="dark">ABP News</ion-card-subtitle>
+                <ion-chip color="success">follow</ion-chip>
+              </div>
+          </ion-card-header>
+         </ion-card>
+         </div>
+      </ion-col>
+    
+    </ion-row>
+   </ion-grid>
+   <ion-button shape="round"color='success'><ion-text color='light'>Explore more</ion-text></ion-button>
+
+</ion-content>

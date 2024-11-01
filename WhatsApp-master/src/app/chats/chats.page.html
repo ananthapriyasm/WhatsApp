@@ -1,0 +1,81 @@
+<ion-header [translucent]="true" class="ion-no-border" >
+<ion-toolbar>
+  <ion-list slot="start">
+    
+  <ion-item lines="none">
+    <ion-buttons slot="start">
+     
+      <ion-back-button></ion-back-button>
+
+    </ion-buttons>
+    <ion-avatar aria-hidden="true" slot="start">
+      <img src="{{img}}">
+    </ion-avatar>
+    <ion-title >{{contactname }}</ion-title>
+    <ion-buttons >
+      <ion-button>
+        <span class="material-symbols-outlined">
+          videocam
+          </span>
+      </ion-button>
+      <ion-button>
+          <span class="material-symbols-outlined">
+            call
+            </span>
+          </ion-button>
+          <ion-button>
+            <span class="material-symbols-outlined">
+              more_vert
+              </span>
+            </ion-button>
+      
+      
+
+     </ion-buttons>
+  </ion-item>
+</ion-list>
+</ion-toolbar>
+</ion-header>
+
+
+  
+ 
+
+<ion-footer class="ion-no-border,ion-padding" >
+ <ion-grid>
+  <ion-row>
+
+    <ion-col size="10">
+      <ion-item class="rounded-search-bar" lines="none" color="light"><span class="material-symbols-outlined">
+        mood
+        </span>
+        <ion-input placeholder="Message" class="ion-margin-bottom"></ion-input>
+        <span class="material-symbols-outlined">
+          attach_file
+          </span>
+        
+          <span class="material-symbols-outlined">
+            photo_camera
+            </span>
+      </ion-item>
+      </ion-col>
+      
+      <ion-col size="2">
+        <ion-item color="success">
+          <ion-fab slot="fixed" horizontal="center" vertical="center" >
+            <ion-fab-button color="success">
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            </ion-fab>
+        </ion-item>
+        
+      </ion-col>
+    
+  </ion-row>
+ </ion-grid>
+
+     
+     
+      
+   
+</ion-footer>
