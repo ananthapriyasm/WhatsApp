@@ -8,6 +8,10 @@ import { AnimationItem } from 'lottie-web';
 import Lottie from 'lottie-web';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
+import { Capacitor } from '@capacitor/core';
+import { DomSanitizer } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-tab1',
@@ -20,7 +24,8 @@ export class Tab1Page implements AfterViewInit{
   lottieConfig: any;
   animation: AnimationItem | null = null;
   getParamValue : any;
-  constructor(private route:ActivatedRoute ,private router:Router) {
+  imgURL:any;
+  constructor(private route:ActivatedRoute ,private router:Router,) {
     addIcons({archiveOutline,lockClosedOutline,chatboxOutline,chatboxEllipses,call,people,home,cameraOutline,search,playCircle,radio,library,chatbubbleOutline,peopleOutline,callOutline,ellipsisVertical});
 
   }
@@ -135,4 +140,13 @@ contacts=[
 openChat(contactName:string,img:string) {
   this.router.navigate(['/chats', contactName,img]); // Navigates to the chat page with contact ID
 }
+
+ takePhoto = async () => {
+  const photo = await Camera.getPhoto({
+    resultType: CameraResultType.Uri,
+    source: CameraSource.Prompt,
+    quality: 100,
+  });
+  this.imgURL=photo.dataUrl;
+};
 }

@@ -4,6 +4,7 @@ import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalo
 import player from 'lottie-web';
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 //import{ LottieModule} from 'ngx-lottie';
 export function playerFactory() {
   return import('lottie-web').then((mod) => mod.default || mod);
@@ -18,3 +19,5 @@ bootstrapApplication(AppComponent, {
     provideRouter(routes, withPreloading(PreloadAllModules)),
   ],
 });
+defineCustomElements(window);
+
